@@ -22,7 +22,7 @@ export function ProjectRow({ project, index, onOpenCaseStudy }) {
       >
         <div
           className={cn(
-            "lg:col-span-8",
+            "lg:col-span-7 xl:col-span-8",
             reversed ? "lg:order-2" : "lg:order-1"
           )}
         >
@@ -37,7 +37,7 @@ export function ProjectRow({ project, index, onOpenCaseStudy }) {
           </button>
         </div>
 
-        <div className={cn("lg:col-span-4", reversed ? "lg:order-1" : "lg:order-2")}>
+        <div className={cn("lg:col-span-5 xl:col-span-4", reversed ? "lg:order-1" : "lg:order-2")}>
           <div className="mb-4 flex items-baseline gap-4">
             <span className="font-mono text-sm text-ink-faint">{project.number}</span>
             <span className="h-px flex-1 bg-line" />
