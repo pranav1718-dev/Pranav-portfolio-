@@ -21,7 +21,7 @@ export function SelectedWork() {
           description="Real projects spanning business websites, product UI and design systems — each with its own case study."
         />
 
-        <div className="mt-16">
+        <div className="mt-11 sm:mt-12">
           {projects.map((project, index) => (
             <ProjectRow
               key={project.id}

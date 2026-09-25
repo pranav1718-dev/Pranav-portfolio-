@@ -18,7 +18,7 @@ export function ProjectVisual({ project, index }) {
 
   if (project.image) {
     return (
-      <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl sm:aspect-[16/10]">
+      <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl shadow-[0_30px_60px_-35px_rgba(17,17,17,0.45)] sm:aspect-[16/10]">
         <motion.img
           src={project.image}
           alt={`${project.title} — real screenshot of the live website`}

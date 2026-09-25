@@ -104,17 +104,19 @@ export function Navbar() {
             className="overflow-hidden border-t border-line bg-paper md:hidden"
           >
             <ul className="container-editorial flex flex-col gap-1 py-6">
-              {navLinks.map((link) => (
-                <li key={link.href}>
-                  <a
-                    href={link.href}
-                    onClick={handleLinkClick}
-                    className="block py-3 text-2xl font-display font-medium text-ink"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
+              {navLinks
+                .filter((link) => link.href !== "#contact")
+                .map((link) => (
+                  <li key={link.href}>
+                    <a
+                      href={link.href}
+                      onClick={handleLinkClick}
+                      className="block py-3 text-2xl font-display font-medium text-ink"
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
               <li className="pt-4">
                 <Button href="#contact" onClick={handleLinkClick} variant="primary" className="w-full justify-center">
                   Let&rsquo;s Talk

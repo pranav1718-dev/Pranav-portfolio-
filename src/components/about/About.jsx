@@ -23,14 +23,14 @@ export function About() {
             prototype, build and iterate faster."
           </p>
 
-          <p className="mt-8 max-w-xl text-lg leading-relaxed text-ink-soft">
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-soft">
             I'm Pranav, a BSc Computer Science student focused on UI/UX and
             frontend development. I design interfaces in Figma and build
             them with React, Vite and Tailwind CSS — currently deepening my
             JavaScript fundamentals alongside that work.
           </p>
 
-          <dl className="mt-12 grid grid-cols-2 gap-8 border-t border-line pt-8 sm:grid-cols-3">
+          <dl className="mt-10 grid grid-cols-2 gap-8 border-t border-line pt-8 sm:grid-cols-3">
             <div>
               <dt className="font-mono text-xs tracking-[0.15em] text-ink-faint uppercase">
                 Focus

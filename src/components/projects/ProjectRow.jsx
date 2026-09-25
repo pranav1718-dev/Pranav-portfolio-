@@ -17,12 +17,12 @@ export function ProjectRow({ project, index, onOpenCaseStudy }) {
     >
       <div
         className={cn(
-          "grid grid-cols-1 items-center gap-8 lg:grid-cols-12 lg:gap-12",
+          "grid grid-cols-1 items-center gap-6 lg:grid-cols-12 lg:gap-12",
         )}
       >
         <div
           className={cn(
-            "lg:col-span-7",
+            "lg:col-span-8",
             reversed ? "lg:order-2" : "lg:order-1"
           )}
         >
@@ -37,8 +37,8 @@ export function ProjectRow({ project, index, onOpenCaseStudy }) {
           </button>
         </div>
 
-        <div className={cn("lg:col-span-5", reversed ? "lg:order-1" : "lg:order-2")}>
-          <div className="mb-6 flex items-baseline gap-4">
+        <div className={cn("lg:col-span-4", reversed ? "lg:order-1" : "lg:order-2")}>
+          <div className="mb-4 flex items-baseline gap-4">
             <span className="font-mono text-sm text-ink-faint">{project.number}</span>
             <span className="h-px flex-1 bg-line" />
             <span className="font-mono text-xs tracking-[0.15em] text-ink-faint uppercase">
@@ -51,9 +51,9 @@ export function ProjectRow({ project, index, onOpenCaseStudy }) {
           </h3>
           <p className="mt-2 text-sm font-medium text-accent">{project.category}</p>
 
-          <p className="mt-5 max-w-md text-ink-soft leading-relaxed">{project.description}</p>
+          <p className="mt-4 max-w-md text-ink-soft leading-relaxed">{project.description}</p>
 
-          <div className="mt-6 flex flex-wrap gap-2">
+          <div className="mt-5 flex flex-wrap gap-2">
             {project.tech.map((tech) => (
               <span
                 key={tech}
@@ -68,7 +68,7 @@ export function ProjectRow({ project, index, onOpenCaseStudy }) {
             type="button"
             onClick={() => onOpenCaseStudy(project)}
             data-cursor-hover
-            className="group mt-8 inline-flex items-center gap-2 text-sm font-medium text-ink"
+            className="group mt-6 inline-flex items-center gap-2 text-sm font-medium text-ink"
           >
             View Case Study
             <ArrowUpRight
